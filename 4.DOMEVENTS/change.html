@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change! - DOM</title>
+</head>
+
+<body>
+
+    <p>Ingin apa?</p>
+    <select id="pilihanku" onchange="myFunction()">
+    <option selected">Pilih</option>
+    <option value="Mobil">Mobil</option>
+    <option value="Jam tangan">Jam tangan</option>
+    <option value="Rumah">Rumah</option>
+    </select>
+
+    <p>Mangga dipilih bade mobil mana?</p>
+    <select id="pilihanku1" onchange="myFunction1()">
+    <option selected">Pilih</option>
+    <option value="Civic">Civic</option>
+    <option value="Datsun">Datsun</option>
+    <option value="Lancher">Lancher</option>
+    <option value="Xpander">Xpander</option>
+    </select>
+
+    <p>Semoga Allah ta'ala memberikan
+        <a id="demo"></a> pilihanmu yaitu :
+        <a id="demo1"></a>
+    </p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("pilihanku").value;
+            document.getElementById("demo").innerHTML = "<b>" + x + "</b>";
+        }
+
+        function myFunction1() {
+            var x = document.getElementById("pilihanku1").value;
+            document.getElementById("demo1").innerHTML = "<b>" + x + "</b>";
+        }
+    </script>
+</body>
+
+</html>

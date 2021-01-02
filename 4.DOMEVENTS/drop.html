@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop</title>
+    <style>
+        .droptarget {
+            width: 100px;
+            height: 40px;
+            margin: 15px;
+            padding-top: 17px;
+            text-align: center;
+            border: 1px solid red;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+        <!-- <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">
+            Drag me!
+        </p> -->
+
+        <img ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget" src="/2.DOMHTML/img2.png" width="70%">
+
+    </div>
+
+    <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+    <br>
+    <p id="demo"></p>
+
+    <script>
+        function dragStart(event) {
+            event.dataTransfer.setData("Text", event.target.id);
+        }
+
+        function dragging(event) {
+            document.getElementById("demo").innerHTML = "Nuju didrag";
+        }
+
+        function allowDrop(event) {
+            event.preventDefault();
+        }
+
+
+        function drop(event) {
+            event.preventDefault();
+            var data = event.dataTransfer.getData("Text");
+            event.target.appendChild(document.getElementById(data));
+            document.getElementById("demo").innerHTML = "nah atos";
+        }
+    </script>
+</body>
+
+</html>

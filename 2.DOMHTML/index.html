@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM HTML</title>
+</head>
+
+<body>
+
+    <img src="img1.png" alt="" id="myImage"><br>
+    <button onclick="ganti()">ganti aja!</button>
+    <script>
+        // document.write(Date()); langsung nulis
+        function ganti() {
+            document.getElementById("myImage").src = "img2.png";
+        }
+    </script>
+</body>
+
+</html>

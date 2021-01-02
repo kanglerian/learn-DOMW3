@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copyright guys !!</title>
+</head>
+
+<body>
+    <p oncopy="myFunction()">Ekhem gitu we ya! jangan di copy pokoknamah</p>
+    <input oncut="myFunction1()" value="Silahkan cut teks did dalam ini ya"><br><br>
+    <p id="demo"></p>
+    <textarea id="" cols="30" rows="10"></textarea>
+
+    <script>
+        function myFunction() {
+            alert("HEY ! ULAH NGOPI");
+        }
+
+        function myFunction1() {
+            document.getElementById("demo").innerHTML = "Teks sudah dikopi!";
+        }
+    </script>
+</body>
+
+</html>

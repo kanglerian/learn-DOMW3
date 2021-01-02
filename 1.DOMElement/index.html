@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Ini P pertama</p>
+    <h2 id="intro">Lerian!</h2>
+    <p id="demo"></p>
+
+    <p id="demo2"></p>
+
+    <div id="main">
+        <p class="intro">The Dom is very useful</p>
+        <p class="intro">Ini contoh dari <b>getElementsByTagName</b> method</p>
+    </div>
+
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+    <p class="dom">The DOM is very easy</p>
+    <p class="tayo">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+    <p id="demo5"></p>
+
+    <form action="/action_page.php" id="frm1">
+        <div>Firstname: <input type="text" name="fname" value="Donald"></div><br>
+        <div>Lastname: <input type="text" name="lname" value="Duck"></div><br>
+    </form>
+    <button onclick="myFunctionis()">tampilkan</button>
+
+    <p id="tampil"></p>
+
+    <script>
+        function myFunctionis() {
+            var name = document.forms["frm1"];
+            var txtname = "";
+            var i;
+            for (i = 0; i < name.length; i++) {
+                txtname += name.elements[i].value + " ,";
+            }
+            document.getElementById("tampil").innerHTML = txtname;
+        }
+
+        var myElement = document.getElementById("intro");
+        document.getElementById("demo").innerHTML =
+            "The tex from the intro paragraph is " + myElement.innerHTML;
+
+        var x = document.getElementsByTagName("p");
+        document.getElementById("demo2").innerHTML =
+            "Text pada paragraph pertama (index : 0) adalah " + x[0].innerHTML;
+
+        var y = document.getElementById("main");
+        var z = y.getElementsByTagName("p");
+        document.getElementById("demo3").innerHTML =
+            "Paragraph pertama dari (index 0) di dalam main adalah : " +
+            z[0].innerHTML;
+
+        var aa = document.getElementsByClassName("intro");
+        document.getElementById("demo4").innerHTML =
+            "Paragraph pertama (index 1) dari class intro adalah : " + aa[1].innerHTML;
+
+        var ab = document.querySelectorAll("p.dom");
+        document.getElementById("demo5").innerHTML =
+            "Paragraph ini index ke anu dengan kelas intro adalah : " + ab[0].innerHTML;
+    </script>
+</body>
+
+</html>

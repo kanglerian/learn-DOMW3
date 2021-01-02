@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        .aye {
+            width: 200px;
+            background-color: orange;
+            text-align: center;
+        }
+        
+        .aye:hover {
+            transform: scale(1.1);
+        }
+        
+        .hope {
+            height: 50px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+    <script>
+        function upperGuys() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+
+        function lowerGuys() {
+            var x = document.getElementById("lname");
+            x.value = x.value.toLowerCase();
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1 onclick="this.innerHTML = 'BAA !!!'" class="aye">Klik disini!</h1>
+
+    <h2 onclick="gentos(this)">Klik anu kadua!</h2>
+
+    <div><input type="text" name="fname" id="fname" onchange="upperGuys()"></div>
+    <div><input type="text" name="fname" id="lname" onchange="lowerGuys()"></div>
+
+    <div class="hope" onmouseover="sentuh(this)" onmouseout="uih(this)">Hover me</div>
+
+    <br><br>
+
+    <button id="ahuy">Coba</button>
+    <p id="demo4"></p>
+
+    <form action="#" id="frm">
+        <input type="text" name="fcik" id="fcik" value="">
+        <input type="text" name="lcik" id="lcik" value="">
+    </form>
+    <button onclick="hitung()">Hitung</button>
+    <p id="demo5"></p>
+
+
+    <script>
+        function hitung() {
+            var x = parseInt(document.getElementById("fcik").value);
+            var y = parseInt(document.getElementById("lcik").value);
+            var hasil = x * y;
+            // document.getElementById("demo5").innerHTML = hasil;
+            alert("Hasilnya adalah " + hasil)
+        }
+
+
+        var x = document.getElementById("ahuy");
+        x.addEventListener("mouseover", myFirstCondition);
+        x.addEventListener("mouseout", mySecondCondition);
+        x.addEventListener("click", myThirdCondition);
+
+        function myFirstCondition() {
+            document.getElementById("demo4").innerHTML += "Disentuh <br>";
+            // alert("Disentuh");
+        }
+
+        function mySecondCondition() {
+            document.getElementById("demo4").innerHTML += "Ditinggal <br>";
+            // alert("Ditinggal");
+
+        }
+
+        function myThirdCondition() {
+            // document.getElementById("demo4").innerHTML += "Diclick <br>";
+            alert("Diclick");
+        }
+
+
+        function gentos(hehe) {
+            hehe.style.color = "red";
+            hehe.innerHTML = "Berubah !!";
+        }
+
+        function sentuh(cik) {
+            cik.innerHTML = "Nuhun";
+        }
+
+        function uih(cak) {
+            cak.innerHTML = "Hover me";
+        }
+    </script>
+</body>
+
+</html>

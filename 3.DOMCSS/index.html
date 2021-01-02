@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CSS</title>
+</head>
+
+<body>
+
+    <h2 id="h2">Ganti warna yuk, klik aku supaya ganti warna ya!</h2>
+    <br>
+    <button onclick="ganti()">GAS!!</button>
+    <button onclick="reset()">Uihkeun deui</button>
+    <script>
+        function ganti() {
+            document.getElementById("h2").style.color = "red";
+            document.getElementById("h2").style.fontSize = "32px";
+        }
+
+        function reset() {
+            document.getElementById("h2").style.color = "black";
+            document.getElementById("h2").style.fontSize = "17px";
+        }
+    </script>
+</body>
+
+</html>
