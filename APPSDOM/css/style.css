@@ -1,0 +1,51 @@
+body {
+    background-color: #FAFAFA;
+}
+
+.navbar {
+    box-shadow: 0px 0px 15px 0 rgba(0, 0, 0, 0.05);
+}
+
+.breadcumb {
+    margin-top: 20px;
+}
+
+.breadcrumb {
+    background-color: rgb(246, 246, 246);
+    color: black;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #d4a300;
+}
+
+.content {
+    text-align: center;
+    height: 400px;
+}
+
+.isi {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.tombol {
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+}
+
+.tombol button {
+    margin-right: 5px;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+    text-align: center;
+    color: #cacaca;
+    font-size: 14px;
+}

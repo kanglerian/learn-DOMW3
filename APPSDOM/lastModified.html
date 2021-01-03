@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Example - JavaScript</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed">
+        <div class="container">
+            <a class="navbar-brand" href="http://kanglerian.com/">
+                <img src="assets/logo.svg" width="20%" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.w3schools.com/js/js_dom_examples.asp">W3School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/kanglerian/">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="breadcumb">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">CodaleCode</a></li>
+                    <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">LastModified</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="tombol">
+        <div class="container">
+            <button class="btn btn-info btn-sm" onclick="bukaBaru()">Buka window baru</button>
+            <button class="btn btn-info btn-sm" onclick="lihatTitle()" ">Lihat Title</button>
+            <button class="btn btn-info btn-sm " onclick="lihatURL() " ">Lihat URL</button>
+            <button class="btn btn-info btn-sm " onclick="lihatButton() " ">Jumlah Button</button>
+            <button class="btn btn-info btn-sm " onclick="lihatGambar() " ">Jumlah Gambar</button>
+        </div>
+    </section>
+
+    <section class=" content ">
+        <div class="container ">
+            <div class="isi ">
+
+
+
+
+
+                <p>Kapan dokumen ini terakhir di modifikasi?</p>
+                <button class="btn btn-primary btn-sm mb-3 " onclick="myFunction() ">Klik disini yuk</button>
+
+                <p id="demo "></p>
+
+
+
+                <marquee direction="left ">
+                    <p id="jalan "></p>
+                </marquee>
+
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="fixed-bottom ">
+        <p id="tahun "></p>
+    </footer>
+
+
+    <script src="js/all.min.js "></script>
+    <script src="js/jquery-3.2.1.min.js "></script>
+    <script src="js/bootstrap.min.css "></script>
+    <script src="js/popper.min.js "></script>
+    <script src="js/script.js "></script>
+    <script src="js/documentObject.js "></script>
+</body>
+
+</html>
