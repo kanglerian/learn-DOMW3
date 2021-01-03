@@ -14,12 +14,12 @@
     <nav class="navbar navbar-expand-lg fixed" id="p0">
         <div class="container">
             <a class="navbar-brand" href="http://kanglerian.com/">
-                <img src="assets/logo.svg" width="20%" class="d-inline-block align-top" alt="">
+                <img src="assets/logo.svg" id="gambar" width="20%" class="d-inline-block align-top" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" id="p">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -37,7 +37,7 @@
     <section class="breadcumb">
         <div class="container">
             <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
+                <ol class="breadcrumb " id="bread">
                     <li class="breadcrumb-item"><a href="#">CodaleCode</a></li>
                     <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
                     <li class="breadcrumb-item active" aria-current="page"><span id="title"></span></li>
@@ -48,10 +48,10 @@
 
     <section class="tombol" id="tombol">
         <div class="container">
-            <button class="btn btn-info btn-sm" onclick="document.getElementById('p1').style.visibility = 'hidden'">Sembunyikan Konten</button>
+            <button class="btn btn-info btn-sm" onclick="document.getElementById( 'p1').style.visibility='hidden'">Sembunyikan Konten</button>
             <button class="btn btn-info btn-sm" onclick="getElementById('p1').style.visibility='visible'">Tampilkan Konten</button>
-            <button class="btn btn-info btn-sm " onclick="darkMode() " ">Dark Mode</button>
-            <button class="btn btn-info btn-sm " onclick="lightMode() " ">Light Mode</button>
+            <button class="btn btn-info btn-sm" onclick="darkMode()">Dark Mode</button>
+            <button class="btn btn-info btn-sm" onclick="lightMode()">Light Mode</button>
         </div>
     </section>
 
@@ -64,8 +64,8 @@
                 <p>Silahkan cek untuk linknya ya!</p>
                 <p id="link"></p>
                 <div>
-                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/document.html " class="btn btn-primary btn-sm " onclick="satu() ">Website</a>
-                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/link.html " class="btn btn-danger btn-sm " onclick="dua() ">Link DOM</a>
+                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/document.html" class="btn btn-primary btn-sm" onclick="satu()">Website</a>
+                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/link.html" class="btn btn-danger btn-sm " onclick="dua()">Link DOM</a>
                 </div>
 
                 <br>
