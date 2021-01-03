@@ -11,7 +11,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed">
+    <nav class="navbar navbar-expand-lg fixed" id="p0">
         <div class="container">
             <a class="navbar-brand" href="http://kanglerian.com/">
                 <img src="assets/logo.svg" width="20%" class="d-inline-block align-top" alt="">
@@ -40,23 +40,25 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">CodaleCode</a></li>
                     <li class="breadcrumb-item"><a href="#">JavaScript</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">LastModified</li>
+                    <li class="breadcrumb-item active" aria-current="page"><span id="title"></span></li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <section class="tombol">
+    <section class="tombol" id="tombol">
         <div class="container">
             <button class="btn btn-info btn-sm" onclick="document.getElementById('p1').style.visibility = 'hidden'">Sembunyikan Konten</button>
             <button class="btn btn-info btn-sm" onclick="getElementById('p1').style.visibility='visible'">Tampilkan Konten</button>
+            <button class="btn btn-info btn-sm " onclick="darkMode() " ">Dark Mode</button>
+            <button class="btn btn-info btn-sm " onclick="lightMode() " ">Light Mode</button>
         </div>
     </section>
 
 
     <section class="content" id="p1">
         <div class="container">
-            <div class="isi">
+            <div class="isi" id="p2">
 
 
                 <p>Silahkan cek untuk linknya ya!</p>
@@ -83,7 +85,7 @@
         </div>
     </section>
 
-    <footer class="fixed-bottom">
+    <footer class="fixed-bottom" id="p3">
         <p id="tahun"></p>
     </footer>
 
