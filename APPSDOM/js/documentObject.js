@@ -1,6 +1,3 @@
-var pesan = "Semangat terus belajarnya! kamu pasti bisa :) ";
-document.getElementById("jalan ").innerHTML = pesan;
-
 function myFunction() {
     document.getElementById("demo ").innerHTML =
         "Terakhir di modifikasi jam segini " +

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Example - JavaScript</title>
+    <title>Link Example - JavaScript</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,9 +16,8 @@
             <a class="navbar-brand" href="http://kanglerian.com/">
                 <img src="assets/logo.svg" width="20%" class="d-inline-block align-top" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -49,31 +48,32 @@
 
     <section class="tombol">
         <div class="container">
-            <button class="btn btn-info btn-sm" onclick="bukaBaru()">Buka window baru</button>
-            <button class="btn btn-info btn-sm" onclick="lihatTitle()" ">Lihat Title</button>
-            <button class="btn btn-info btn-sm " onclick="lihatURL() " ">Lihat URL</button>
-            <button class="btn btn-info btn-sm " onclick="lihatButton() " ">Jumlah Button</button>
-            <button class="btn btn-info btn-sm " onclick="lihatGambar() " ">Jumlah Gambar</button>
+            <button class="btn btn-info btn-sm" onclick="document.getElementById('p1').style.visibility = 'hidden'">Sembunyikan Konten</button>
+            <button class="btn btn-info btn-sm" onclick="getElementById('p1').style.visibility='visible'">Tampilkan Konten</button>
         </div>
     </section>
 
-    <section class=" content">
+
+    <section class="content" id="p1">
         <div class="container">
             <div class="isi">
 
 
+                <p>Silahkan cek untuk linknya ya!</p>
+                <p id="link"></p>
+                <div>
+                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/document.html " class="btn btn-primary btn-sm " onclick="satu() ">Website</a>
+                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/link.html " class="btn btn-danger btn-sm " onclick="dua() ">Link DOM</a>
+                </div>
 
-
-
-                <p>Kapan dokumen ini terakhir di modifikasi?</p>
-                <button class="btn btn-primary btn-sm mb-3" onclick="myFunction()">Klik disini yuk</button>
+                <br>
 
                 <p id="demo"></p>
 
 
 
-                <marquee direction=" left ">
-                    <p id="jalan "></p>
+                <marquee direction="left">
+                    <p id="jalan"></p>
                 </marquee>
 
 
@@ -88,13 +88,12 @@
     </footer>
 
 
-
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/bootstrap.min.css"></script>
-    <script src="/js/popper.min.js"></script>
-    <script src="/js/all.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/documentObject.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.css"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/link.js"></script>
 </body>
 
 </html>
