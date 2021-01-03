@@ -1,5 +1,5 @@
 function myFunction() {
-    document.getElementById("demo ").innerHTML =
+    document.getElementById("demo").innerHTML =
         "Terakhir di modifikasi jam segini " +
         "<b>" + document.lastModified + "</b>";
 }
