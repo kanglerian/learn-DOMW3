@@ -29,4 +29,5 @@ function lightMode() {
     document.getElementById("p0").style.backgroundColor = "#fafafa";
     document.getElementById("p2").style.backgroundColor = "white";
     document.getElementById("p3").style.backgroundColor = "white";
+    document.getElementById("peringatan").innerHTML = null;
 }
