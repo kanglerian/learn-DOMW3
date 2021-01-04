@@ -4,12 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link Example - JavaScript</title>
+    <title>Select Example - JavaScript</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <!-- Bootstrap CSS -->
+    <script>
+        function pilih() {
+            var obj = document.getElementById("pilihanku");
+            alert("kamu memilih " + obj.options[obj.selectedIndex].text);
+            /* document.getElementById("demo").innerHTML =
+                obj.options[obj.selectedIndex].value; */
+        }
+
+        function ubah() {
+            var obj = document.getElementById("pilihanku");
+            obj.options[obj.selectedIndex].text = "Melon";
+        }
+
+        function hapus() {
+            var obj = document.getElementById("pilihanku");
+            obj.remove(obj.selectedIndex);
+        }
+    </script>
 </head>
 
 <body>
@@ -65,33 +83,19 @@
             <div class="isi" id="p2">
                 <p id="peringatan"></p>
 
+
                 <form action="#">
-                    <input type="text" id="in1" value="Isinya input">
-                    <button type="button" onclick="berubah()">klik berubah</button>
+                    Pilih buah kesukaanmu:
+                    <select name="#" id="pilihanku">
+                        <option selected>Pilih</option>
+                        <option value="Jeruk">Jeruk</option>
+                        <option value="Anggur">Anggur</option>
+                        <option value="Apel">Apel</option>
+                    </select>
+                    <button type="button" onclick="pilih()">Lihat pilihanmu!</button>
+                    <button type="button" onclick="ubah()">Ubah pilihanmu!</button>
+                    <button type="button" onclick="hapus()">Hapus pilihanmu!</button>
                 </form>
-                <br>
-                <p>Silahkan untuk mengeluarkan valuenya!</p>
-                <div>
-                    <form action="#" id="frm1">
-                        <input type="text" name="">
-                        <input type="text" name="">
-                        <input type="text" name="">
-                        <button type="button" onclick="tampilkan()">Tampilkan</button>
-                        <button type="button" onclick="reset()">Reset</button>
-                    </form>
-                </div>
-                <p id="demo2"></p>
-
-                <br>
-
-                <p>Silahkan cek untuk linknya ya!</p>
-                <p id="link"></p>
-                <div>
-                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/document.html" class="btn btn-primary btn-sm" onclick="satu()">Website</a>
-                    <a href="#http://kanglerian.com/learn-DOMW3/APPSDOM/link.html" class="btn btn-danger btn-sm " onclick="dua()">Link DOM</a>
-                </div>
-
-                <br>
 
                 <p id="demo"></p>
 
@@ -126,7 +130,7 @@
 
     <script src="js/all.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/link.js"></script>
+    <script src="js/select.js"></script>
 </body>
 
 </html>
